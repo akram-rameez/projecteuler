@@ -107,15 +107,15 @@ digits = ""
 
 for line in file:
 	numbers.append(line)
-
-for x in xrange(0,10):
+	
+sum=0
+for x in xrange(0,50):
 	pass
-	sum=0
 	for y in xrange(0,100):
 		pass
 		sum+=int(numbers[y][49-x:50-x:])
 	digits+=str(sum%10)
 	sum/=10
+digits+=str(sum)
 
-print digits[::-1]
-
+print digits[len(digits):len(digits)-11:-1]
