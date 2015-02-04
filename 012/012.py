@@ -11,17 +11,28 @@
 # We can see that 28 is the first triangle number to have over five divisors.
 # What is the value of the first triangle number to have over five hundred divisors?
 
+
+import math
+
 count,ctr,n=0,0,0
 
-while count<200:
+def no_factors(n):
 	pass
-	ctr+=1
-	n+=ctr
-	count=0
-	for x in xrange(1,n+1):
+	f=2
+	if n%int(math.sqrt(n))==0:
+		pass
+		f+=1
+	for x in xrange(2,int(math.sqrt(n))):
 		pass
 		if n%x==0:
 			pass
-			count+=1
+			f+=2
+	return f
+
+while count<500:
+	pass
+	ctr+=1
+	n+=ctr
+	count=no_factors(n)
 
 print n
