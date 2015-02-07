@@ -5,31 +5,28 @@
 
 import math
 
-count,ctr,n=0,0,0
-
 def factors_sum(n):
 	pass
 	sum=1
-	print 1,
 	for x in xrange(2,int(math.sqrt(n))+1):
 		if n%x==0:
 			pass
-			sum+=x+(n/x)
-			if x==int(math.sqrt(n)):
-				print x
+			if x==math.sqrt(n):
+				sum+=x
 			else:
-				print x,(n/x),
-	print " "
+				sum+=x+(n/x)
 	return sum
 
 ans=0
 
-for x in xrange(2,10000):
-	print "-->",x
+for x in xrange(1,10001):
+	
 	x1=factors_sum(x)
 	x2=factors_sum(x1)
 
-	if x1==x2:
-		ans+=x1
+	if x2==x:
+		if x1!=x:
+			pass
+			ans+=x
 
 print ans
