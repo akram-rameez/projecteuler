@@ -6,17 +6,16 @@ import math
 qstn=600851475143
 fmax = int(math.sqrt(qstn))
 
-flag=0
-num=[]
-
 for x in xrange(fmax,1,-1):
 	pass
+	print x
 	flag=0
 	for y in xrange(int(math.sqrt(x)),1,-1):
 		pass
 		if x%y==0:
 			pass
 			flag+=1
+			break
 	if flag==0:
 		pass
 		if qstn%x==0:
