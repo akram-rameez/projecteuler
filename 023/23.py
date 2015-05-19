@@ -22,32 +22,25 @@ def check(n):
 	if sum<n:
 		return -1
 
-sum,sum_l,sum_nl=0,0,0
+def is_abundant_sum(n):
+	pass
+	for i in l:
+		if i>n:
+			return False
+		if (n-i) in l:
+			return True
+	return False
+
+sum_l=0
 n = 28123
 l = []
 l2 = []
-for x in xrange(2,n):
-	pass
-	sum=sum+x
-	# print x,
+for x in xrange(12,n):
+	pass	
 	if check(x)==1:
 		l.append(x)
-		# print "()",
-for x in range(len(l)):
+for x in range(1,n+1):
 	pass
-	for y in xrange(x+1,len(l)):
-		pass
-		l2.append(l[x]+l[y])
-l2.sort()
-for x in l2:
-	pass
-	if l2.count(x)!=1:
-		pass
-		for y in range(l2.count(x)-1):
-			pass
-			l2.remove(x)
-	sum_l=sum_l+x
-# print ""
-# print sum
-# print sum_l
-print sum-sum_l
+	if not is_abundant_sum(x):
+		sum_l=sum_l+x
+print sum_l
