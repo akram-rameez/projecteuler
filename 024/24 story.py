@@ -34,7 +34,7 @@ digits.sort()
 # print "Number of digits:",len(digits)
 # print "digits:",digits
 
-n = 10
+n = 23
 n = n-1
 
 # print "digits change in the place every",math.factorial(len(digits)-1),"numbers"
