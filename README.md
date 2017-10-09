@@ -11,9 +11,9 @@ git clone https://github.com/<your_username>/projecteuler.git
 ```
 3. Get inside the `projecteuler` directory.
 ```markdown
-cd projecteular
+cd projecteuler
 ```
-4. Create a branch
+4. Create a branch.
 ```markdown
 git checkout -b branch-name
 ```
